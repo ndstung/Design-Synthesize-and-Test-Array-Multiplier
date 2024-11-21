@@ -1,0 +1,1886 @@
+<profile>
+    <ReportVersion>
+        <Version>2021.1</Version>
+    </ReportVersion>
+    <UserAssignments>
+        <unit>ns</unit>
+        <ProductFamily>virtexuplus</ProductFamily>
+        <Part>xcvu5p-flva2104-1-e</Part>
+        <TopModelName>systolic_array</TopModelName>
+        <TargetClockPeriod>10.00</TargetClockPeriod>
+        <ClockUncertainty>2.70</ClockUncertainty>
+        <FlowTarget>vivado</FlowTarget>
+    </UserAssignments>
+    <PerformanceEstimates>
+        <PipelineType>no</PipelineType>
+        <SummaryOfTimingAnalysis>
+            <unit>ns</unit>
+            <EstimatedClockPeriod>3.268</EstimatedClockPeriod>
+        </SummaryOfTimingAnalysis>
+        <SummaryOfOverallLatency>
+            <unit>clock cycles</unit>
+            <Best-caseLatency>197</Best-caseLatency>
+            <Average-caseLatency>197</Average-caseLatency>
+            <Worst-caseLatency>197</Worst-caseLatency>
+            <Best-caseRealTimeLatency>1.970 us</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>1.970 us</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>1.970 us</Worst-caseRealTimeLatency>
+            <Interval-min>198</Interval-min>
+            <Interval-max>198</Interval-max>
+        </SummaryOfOverallLatency>
+        <SummaryOfLoopLatency>
+            <VITIS_LOOP_25_3_VITIS_LOOP_26_4>
+                <TripCount>16</TripCount>
+                <Latency>176</Latency>
+                <AbsoluteTimeLatency>1760</AbsoluteTimeLatency>
+                <IterationLatency>11</IterationLatency>
+            </VITIS_LOOP_25_3_VITIS_LOOP_26_4>
+        </SummaryOfLoopLatency>
+    </PerformanceEstimates>
+    <AreaEstimates>
+        <Resources>
+            <DSP>1</DSP>
+            <FF>859</FF>
+            <LUT>1874</LUT>
+            <BRAM_18K>0</BRAM_18K>
+            <URAM>0</URAM>
+        </Resources>
+        <AvailableResources>
+            <BRAM_18K>2048</BRAM_18K>
+            <DSP>3474</DSP>
+            <FF>1201154</FF>
+            <LUT>600577</LUT>
+            <URAM>470</URAM>
+        </AvailableResources>
+    </AreaEstimates>
+    <InterfaceSummary>
+        <RtlPorts>
+            <name>ap_clk</name>
+            <Object>systolic_array</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_rst</name>
+            <Object>systolic_array</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_start</name>
+            <Object>systolic_array</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_done</name>
+            <Object>systolic_array</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_idle</name>
+            <Object>systolic_array</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_ready</name>
+            <Object>systolic_array</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>A_0_0</name>
+            <Object>A_0_0</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>A_0_1</name>
+            <Object>A_0_1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>A_0_2</name>
+            <Object>A_0_2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>A_0_3</name>
+            <Object>A_0_3</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>A_1_0</name>
+            <Object>A_1_0</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>A_1_1</name>
+            <Object>A_1_1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>A_1_2</name>
+            <Object>A_1_2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>A_1_3</name>
+            <Object>A_1_3</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>A_2_0</name>
+            <Object>A_2_0</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>A_2_1</name>
+            <Object>A_2_1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>A_2_2</name>
+            <Object>A_2_2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>A_2_3</name>
+            <Object>A_2_3</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>A_3_0</name>
+            <Object>A_3_0</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>A_3_1</name>
+            <Object>A_3_1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>A_3_2</name>
+            <Object>A_3_2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>A_3_3</name>
+            <Object>A_3_3</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>B_0_0</name>
+            <Object>B_0_0</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>B_0_1</name>
+            <Object>B_0_1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>B_0_2</name>
+            <Object>B_0_2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>B_0_3</name>
+            <Object>B_0_3</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>B_1_0</name>
+            <Object>B_1_0</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>B_1_1</name>
+            <Object>B_1_1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>B_1_2</name>
+            <Object>B_1_2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>B_1_3</name>
+            <Object>B_1_3</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>B_2_0</name>
+            <Object>B_2_0</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>B_2_1</name>
+            <Object>B_2_1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>B_2_2</name>
+            <Object>B_2_2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>B_2_3</name>
+            <Object>B_2_3</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>B_3_0</name>
+            <Object>B_3_0</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>B_3_1</name>
+            <Object>B_3_1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>B_3_2</name>
+            <Object>B_3_2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>B_3_3</name>
+            <Object>B_3_3</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>C_0_0</name>
+            <Object>C_0_0</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>C_0_0_ap_vld</name>
+            <Object>C_0_0</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>C_0_1</name>
+            <Object>C_0_1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>C_0_1_ap_vld</name>
+            <Object>C_0_1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>C_0_2</name>
+            <Object>C_0_2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>C_0_2_ap_vld</name>
+            <Object>C_0_2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>C_0_3</name>
+            <Object>C_0_3</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>C_0_3_ap_vld</name>
+            <Object>C_0_3</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>C_1_0</name>
+            <Object>C_1_0</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>C_1_0_ap_vld</name>
+            <Object>C_1_0</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>C_1_1</name>
+            <Object>C_1_1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>C_1_1_ap_vld</name>
+            <Object>C_1_1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>C_1_2</name>
+            <Object>C_1_2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>C_1_2_ap_vld</name>
+            <Object>C_1_2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>C_1_3</name>
+            <Object>C_1_3</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>C_1_3_ap_vld</name>
+            <Object>C_1_3</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>C_2_0</name>
+            <Object>C_2_0</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>C_2_0_ap_vld</name>
+            <Object>C_2_0</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>C_2_1</name>
+            <Object>C_2_1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>C_2_1_ap_vld</name>
+            <Object>C_2_1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>C_2_2</name>
+            <Object>C_2_2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>C_2_2_ap_vld</name>
+            <Object>C_2_2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>C_2_3</name>
+            <Object>C_2_3</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>C_2_3_ap_vld</name>
+            <Object>C_2_3</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>C_3_0</name>
+            <Object>C_3_0</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>C_3_0_ap_vld</name>
+            <Object>C_3_0</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>C_3_1</name>
+            <Object>C_3_1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>C_3_1_ap_vld</name>
+            <Object>C_3_1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>C_3_2</name>
+            <Object>C_3_2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>C_3_2_ap_vld</name>
+            <Object>C_3_2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>C_3_3</name>
+            <Object>C_3_3</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>C_3_3_ap_vld</name>
+            <Object>C_3_3</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+    </InterfaceSummary>
+    <RTLDesignHierarchy>
+        <TopModule MAX_DEPTH="3">
+            <ModuleName>systolic_array</ModuleName>
+            <InstancesList>
+                <Instance>
+                    <InstName>grp_systolic_array_Pipeline_VITIS_LOOP_17_1_VITIS_LOOP_18_2_fu_732</InstName>
+                    <ModuleName>systolic_array_Pipeline_VITIS_LOOP_17_1_VITIS_LOOP_18_2</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>732</ID>
+                    <BindInstances>add_ln17_fu_3283_p2 add_ln17_1_fu_3309_p2 add_ln18_fu_4771_p2</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>grp_systolic_array_Pipeline_VITIS_LOOP_27_5_fu_848</InstName>
+                    <ModuleName>systolic_array_Pipeline_VITIS_LOOP_27_5</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>848</ID>
+                    <BindInstances>add_ln27_fu_358_p2 mac_muladd_16s_16s_24ns_24_4_1_U83 mac_muladd_16s_16s_24ns_24_4_1_U83</BindInstances>
+                </Instance>
+            </InstancesList>
+            <BindInstances>add_ln25_fu_1136_p2 add_ln25_1_fu_1210_p2 add_ln26_fu_1384_p2</BindInstances>
+        </TopModule>
+    </RTLDesignHierarchy>
+    <ModuleInformation>
+        <Module>
+            <Name>systolic_array_Pipeline_VITIS_LOOP_17_1_VITIS_LOOP_18_2</Name>
+            <Loops>
+                <VITIS_LOOP_17_1_VITIS_LOOP_18_2/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>2.082</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>18</Best-caseLatency>
+                    <Average-caseLatency>18</Average-caseLatency>
+                    <Worst-caseLatency>18</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.180 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.180 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.180 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>18</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_17_1_VITIS_LOOP_18_2>
+                        <Name>VITIS_LOOP_17_1_VITIS_LOOP_18_2</Name>
+                        <TripCount>16</TripCount>
+                        <Latency>16</Latency>
+                        <AbsoluteTimeLatency>0.160 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>1</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                    </VITIS_LOOP_17_1_VITIS_LOOP_18_2>
+                </SummaryOfLoopLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>525</FF>
+                    <AVAIL_FF>1201154</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>1339</LUT>
+                    <AVAIL_LUT>600577</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>2048</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>3474</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>470</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_17_1_VITIS_LOOP_18_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln17_fu_3283_p2" SOURCE="../systolic_array.cpp:17" URAM="0" VARIABLE="add_ln17"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_17_1_VITIS_LOOP_18_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln17_1_fu_3309_p2" SOURCE="../systolic_array.cpp:17" URAM="0" VARIABLE="add_ln17_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_17_1_VITIS_LOOP_18_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln18_fu_4771_p2" SOURCE="../systolic_array.cpp:18" URAM="0" VARIABLE="add_ln18"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>systolic_array_Pipeline_VITIS_LOOP_27_5</Name>
+            <Loops>
+                <VITIS_LOOP_27_5/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>1.648</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>8</Best-caseLatency>
+                    <Average-caseLatency>8</Average-caseLatency>
+                    <Worst-caseLatency>8</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>80.000 ns</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>80.000 ns</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>80.000 ns</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>8</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_27_5>
+                        <Name>VITIS_LOOP_27_5</Name>
+                        <TripCount>4</TripCount>
+                        <Latency>6</Latency>
+                        <AbsoluteTimeLatency>60.000 ns</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>4</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                    </VITIS_LOOP_27_5>
+                </SummaryOfLoopLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <DSP>1</DSP>
+                    <AVAIL_DSP>3474</AVAIL_DSP>
+                    <UTIL_DSP>~0</UTIL_DSP>
+                    <FF>28</FF>
+                    <AVAIL_FF>1201154</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>205</LUT>
+                    <AVAIL_LUT>600577</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>2048</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>470</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_27_5" OPTYPE="add" PRAGMA="" RTLNAME="add_ln27_fu_358_p2" SOURCE="../systolic_array.cpp:27" URAM="0" VARIABLE="add_ln27"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp" LATENCY="3" LOOP="VITIS_LOOP_27_5" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_16s_16s_24ns_24_4_1_U83" SOURCE="C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:1245" URAM="0" VARIABLE="mul_ln1245"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp" LATENCY="3" LOOP="VITIS_LOOP_27_5" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_16s_16s_24ns_24_4_1_U83" SOURCE="C:/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot\ap_fixed_base.h:1245" URAM="0" VARIABLE="ret_V"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>systolic_array</Name>
+            <Loops>
+                <VITIS_LOOP_25_3_VITIS_LOOP_26_4/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>3.268</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>197</Best-caseLatency>
+                    <Average-caseLatency>197</Average-caseLatency>
+                    <Worst-caseLatency>197</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>1.970 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>1.970 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>1.970 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>198</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_25_3_VITIS_LOOP_26_4>
+                        <Name>VITIS_LOOP_25_3_VITIS_LOOP_26_4</Name>
+                        <TripCount>16</TripCount>
+                        <Latency>176</Latency>
+                        <AbsoluteTimeLatency>1.760 us</AbsoluteTimeLatency>
+                        <IterationLatency>11</IterationLatency>
+                        <PipelineDepth>11</PipelineDepth>
+                        <PipelineType>no</PipelineType>
+                    </VITIS_LOOP_25_3_VITIS_LOOP_26_4>
+                </SummaryOfLoopLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <DSP>1</DSP>
+                    <AVAIL_DSP>3474</AVAIL_DSP>
+                    <UTIL_DSP>~0</UTIL_DSP>
+                    <FF>859</FF>
+                    <AVAIL_FF>1201154</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>1874</LUT>
+                    <AVAIL_LUT>600577</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>2048</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>470</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_25_3_VITIS_LOOP_26_4" OPTYPE="add" PRAGMA="" RTLNAME="add_ln25_fu_1136_p2" SOURCE="../systolic_array.cpp:25" URAM="0" VARIABLE="add_ln25"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_25_3_VITIS_LOOP_26_4" OPTYPE="add" PRAGMA="" RTLNAME="add_ln25_1_fu_1210_p2" SOURCE="../systolic_array.cpp:25" URAM="0" VARIABLE="add_ln25_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_25_3_VITIS_LOOP_26_4" OPTYPE="add" PRAGMA="" RTLNAME="add_ln26_fu_1384_p2" SOURCE="../systolic_array.cpp:26" URAM="0" VARIABLE="add_ln26"/>
+            </BindNodes>
+        </Module>
+    </ModuleInformation>
+    <FIFOInformation/>
+    <UserConfigCommands/>
+    <Args>
+        <Arg ArgName="A" index="0" direction="in" srcType="ap_fixed&lt;16, 8, AP_TRN, AP_WRAP, 0&gt;*" srcSize="16">
+            <hwRefs>
+                <hwRef type="port" interface="A_0_0" name="A_0_0" usage="data" direction="in"/>
+                <hwRef type="port" interface="A_0_1" name="A_0_1" usage="data" direction="in"/>
+                <hwRef type="port" interface="A_0_2" name="A_0_2" usage="data" direction="in"/>
+                <hwRef type="port" interface="A_0_3" name="A_0_3" usage="data" direction="in"/>
+                <hwRef type="port" interface="A_1_0" name="A_1_0" usage="data" direction="in"/>
+                <hwRef type="port" interface="A_1_1" name="A_1_1" usage="data" direction="in"/>
+                <hwRef type="port" interface="A_1_2" name="A_1_2" usage="data" direction="in"/>
+                <hwRef type="port" interface="A_1_3" name="A_1_3" usage="data" direction="in"/>
+                <hwRef type="port" interface="A_2_0" name="A_2_0" usage="data" direction="in"/>
+                <hwRef type="port" interface="A_2_1" name="A_2_1" usage="data" direction="in"/>
+                <hwRef type="port" interface="A_2_2" name="A_2_2" usage="data" direction="in"/>
+                <hwRef type="port" interface="A_2_3" name="A_2_3" usage="data" direction="in"/>
+                <hwRef type="port" interface="A_3_0" name="A_3_0" usage="data" direction="in"/>
+                <hwRef type="port" interface="A_3_1" name="A_3_1" usage="data" direction="in"/>
+                <hwRef type="port" interface="A_3_2" name="A_3_2" usage="data" direction="in"/>
+                <hwRef type="port" interface="A_3_3" name="A_3_3" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="B" index="1" direction="in" srcType="ap_fixed&lt;16, 8, AP_TRN, AP_WRAP, 0&gt;*" srcSize="16">
+            <hwRefs>
+                <hwRef type="port" interface="B_0_0" name="B_0_0" usage="data" direction="in"/>
+                <hwRef type="port" interface="B_0_1" name="B_0_1" usage="data" direction="in"/>
+                <hwRef type="port" interface="B_0_2" name="B_0_2" usage="data" direction="in"/>
+                <hwRef type="port" interface="B_0_3" name="B_0_3" usage="data" direction="in"/>
+                <hwRef type="port" interface="B_1_0" name="B_1_0" usage="data" direction="in"/>
+                <hwRef type="port" interface="B_1_1" name="B_1_1" usage="data" direction="in"/>
+                <hwRef type="port" interface="B_1_2" name="B_1_2" usage="data" direction="in"/>
+                <hwRef type="port" interface="B_1_3" name="B_1_3" usage="data" direction="in"/>
+                <hwRef type="port" interface="B_2_0" name="B_2_0" usage="data" direction="in"/>
+                <hwRef type="port" interface="B_2_1" name="B_2_1" usage="data" direction="in"/>
+                <hwRef type="port" interface="B_2_2" name="B_2_2" usage="data" direction="in"/>
+                <hwRef type="port" interface="B_2_3" name="B_2_3" usage="data" direction="in"/>
+                <hwRef type="port" interface="B_3_0" name="B_3_0" usage="data" direction="in"/>
+                <hwRef type="port" interface="B_3_1" name="B_3_1" usage="data" direction="in"/>
+                <hwRef type="port" interface="B_3_2" name="B_3_2" usage="data" direction="in"/>
+                <hwRef type="port" interface="B_3_3" name="B_3_3" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="C" index="2" direction="out" srcType="ap_fixed&lt;16, 8, AP_TRN, AP_WRAP, 0&gt;*" srcSize="16">
+            <hwRefs>
+                <hwRef type="port" interface="C_0_0" name="C_0_0" usage="data" direction="out"/>
+                <hwRef type="port" interface="C_0_0_ap_vld" name="C_0_0_ap_vld" usage="control" direction="out"/>
+                <hwRef type="port" interface="C_0_1" name="C_0_1" usage="data" direction="out"/>
+                <hwRef type="port" interface="C_0_1_ap_vld" name="C_0_1_ap_vld" usage="control" direction="out"/>
+                <hwRef type="port" interface="C_0_2" name="C_0_2" usage="data" direction="out"/>
+                <hwRef type="port" interface="C_0_2_ap_vld" name="C_0_2_ap_vld" usage="control" direction="out"/>
+                <hwRef type="port" interface="C_0_3" name="C_0_3" usage="data" direction="out"/>
+                <hwRef type="port" interface="C_0_3_ap_vld" name="C_0_3_ap_vld" usage="control" direction="out"/>
+                <hwRef type="port" interface="C_1_0" name="C_1_0" usage="data" direction="out"/>
+                <hwRef type="port" interface="C_1_0_ap_vld" name="C_1_0_ap_vld" usage="control" direction="out"/>
+                <hwRef type="port" interface="C_1_1" name="C_1_1" usage="data" direction="out"/>
+                <hwRef type="port" interface="C_1_1_ap_vld" name="C_1_1_ap_vld" usage="control" direction="out"/>
+                <hwRef type="port" interface="C_1_2" name="C_1_2" usage="data" direction="out"/>
+                <hwRef type="port" interface="C_1_2_ap_vld" name="C_1_2_ap_vld" usage="control" direction="out"/>
+                <hwRef type="port" interface="C_1_3" name="C_1_3" usage="data" direction="out"/>
+                <hwRef type="port" interface="C_1_3_ap_vld" name="C_1_3_ap_vld" usage="control" direction="out"/>
+                <hwRef type="port" interface="C_2_0" name="C_2_0" usage="data" direction="out"/>
+                <hwRef type="port" interface="C_2_0_ap_vld" name="C_2_0_ap_vld" usage="control" direction="out"/>
+                <hwRef type="port" interface="C_2_1" name="C_2_1" usage="data" direction="out"/>
+                <hwRef type="port" interface="C_2_1_ap_vld" name="C_2_1_ap_vld" usage="control" direction="out"/>
+                <hwRef type="port" interface="C_2_2" name="C_2_2" usage="data" direction="out"/>
+                <hwRef type="port" interface="C_2_2_ap_vld" name="C_2_2_ap_vld" usage="control" direction="out"/>
+                <hwRef type="port" interface="C_2_3" name="C_2_3" usage="data" direction="out"/>
+                <hwRef type="port" interface="C_2_3_ap_vld" name="C_2_3_ap_vld" usage="control" direction="out"/>
+                <hwRef type="port" interface="C_3_0" name="C_3_0" usage="data" direction="out"/>
+                <hwRef type="port" interface="C_3_0_ap_vld" name="C_3_0_ap_vld" usage="control" direction="out"/>
+                <hwRef type="port" interface="C_3_1" name="C_3_1" usage="data" direction="out"/>
+                <hwRef type="port" interface="C_3_1_ap_vld" name="C_3_1_ap_vld" usage="control" direction="out"/>
+                <hwRef type="port" interface="C_3_2" name="C_3_2" usage="data" direction="out"/>
+                <hwRef type="port" interface="C_3_2_ap_vld" name="C_3_2_ap_vld" usage="control" direction="out"/>
+                <hwRef type="port" interface="C_3_3" name="C_3_3" usage="data" direction="out"/>
+                <hwRef type="port" interface="C_3_3_ap_vld" name="C_3_3_ap_vld" usage="control" direction="out"/>
+            </hwRefs>
+        </Arg>
+    </Args>
+    <Interfaces>
+        <Interface InterfaceName="ap_clk" type="clock" busTypeName="clock" mode="slave">
+            <busParams>
+                <busParam busParamName="ASSOCIATED_RESET">ap_rst</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_clk">CLK</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_clk</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_rst" type="reset" busTypeName="reset" mode="slave">
+            <busParams>
+                <busParam busParamName="POLARITY">ACTIVE_HIGH</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_rst">RST</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_rst</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_ctrl" type="ap_ctrl" busTypeName="acc_handshake" mode="slave">
+            <portMaps>
+                <portMap portMapName="ap_start">start</portMap>
+                <portMap portMapName="ap_done">done</portMap>
+                <portMap portMapName="ap_idle">idle</portMap>
+                <portMap portMapName="ap_ready">ready</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_done</port>
+                <port>ap_idle</port>
+                <port>ap_ready</port>
+                <port>ap_start</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="A_0_0" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="A_0_0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>A_0_0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="A"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="A_0_1" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="A_0_1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>A_0_1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="A"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="A_0_2" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="A_0_2">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>A_0_2</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="A"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="A_0_3" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="A_0_3">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>A_0_3</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="A"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="A_1_0" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="A_1_0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>A_1_0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="A"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="A_1_1" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="A_1_1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>A_1_1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="A"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="A_1_2" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="A_1_2">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>A_1_2</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="A"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="A_1_3" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="A_1_3">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>A_1_3</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="A"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="A_2_0" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="A_2_0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>A_2_0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="A"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="A_2_1" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="A_2_1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>A_2_1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="A"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="A_2_2" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="A_2_2">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>A_2_2</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="A"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="A_2_3" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="A_2_3">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>A_2_3</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="A"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="A_3_0" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="A_3_0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>A_3_0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="A"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="A_3_1" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="A_3_1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>A_3_1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="A"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="A_3_2" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="A_3_2">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>A_3_2</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="A"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="A_3_3" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="A_3_3">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>A_3_3</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="A"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="B_0_0" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="B_0_0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>B_0_0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="B"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="B_0_1" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="B_0_1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>B_0_1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="B"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="B_0_2" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="B_0_2">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>B_0_2</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="B"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="B_0_3" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="B_0_3">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>B_0_3</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="B"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="B_1_0" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="B_1_0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>B_1_0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="B"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="B_1_1" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="B_1_1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>B_1_1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="B"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="B_1_2" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="B_1_2">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>B_1_2</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="B"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="B_1_3" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="B_1_3">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>B_1_3</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="B"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="B_2_0" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="B_2_0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>B_2_0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="B"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="B_2_1" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="B_2_1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>B_2_1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="B"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="B_2_2" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="B_2_2">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>B_2_2</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="B"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="B_2_3" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="B_2_3">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>B_2_3</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="B"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="B_3_0" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="B_3_0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>B_3_0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="B"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="B_3_1" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="B_3_1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>B_3_1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="B"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="B_3_2" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="B_3_2">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>B_3_2</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="B"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="B_3_3" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="B_3_3">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>B_3_3</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="B"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="C_0_0" type="data" busTypeName="data" protocol="ap_vld" mode="master" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="C_0_0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>C_0_0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="C"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="C_0_1" type="data" busTypeName="data" protocol="ap_vld" mode="master" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="C_0_1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>C_0_1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="C"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="C_0_2" type="data" busTypeName="data" protocol="ap_vld" mode="master" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="C_0_2">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>C_0_2</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="C"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="C_0_3" type="data" busTypeName="data" protocol="ap_vld" mode="master" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="C_0_3">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>C_0_3</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="C"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="C_1_0" type="data" busTypeName="data" protocol="ap_vld" mode="master" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="C_1_0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>C_1_0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="C"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="C_1_1" type="data" busTypeName="data" protocol="ap_vld" mode="master" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="C_1_1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>C_1_1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="C"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="C_1_2" type="data" busTypeName="data" protocol="ap_vld" mode="master" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="C_1_2">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>C_1_2</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="C"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="C_1_3" type="data" busTypeName="data" protocol="ap_vld" mode="master" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="C_1_3">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>C_1_3</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="C"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="C_2_0" type="data" busTypeName="data" protocol="ap_vld" mode="master" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="C_2_0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>C_2_0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="C"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="C_2_1" type="data" busTypeName="data" protocol="ap_vld" mode="master" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="C_2_1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>C_2_1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="C"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="C_2_2" type="data" busTypeName="data" protocol="ap_vld" mode="master" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="C_2_2">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>C_2_2</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="C"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="C_2_3" type="data" busTypeName="data" protocol="ap_vld" mode="master" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="C_2_3">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>C_2_3</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="C"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="C_3_0" type="data" busTypeName="data" protocol="ap_vld" mode="master" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="C_3_0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>C_3_0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="C"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="C_3_1" type="data" busTypeName="data" protocol="ap_vld" mode="master" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="C_3_1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>C_3_1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="C"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="C_3_2" type="data" busTypeName="data" protocol="ap_vld" mode="master" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="C_3_2">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>C_3_2</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="C"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="C_3_3" type="data" busTypeName="data" protocol="ap_vld" mode="master" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="C_3_3">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>C_3_3</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="C"/>
+            </constraints>
+        </Interface>
+    </Interfaces>
+    <ReportHWInterface>
+        <section name="HW Interfaces" level="0">
+            <item name="REGISTER">
+                <table isCollapsed="0">
+                    <keys size="3">Interface, Mode, Bitwidth</keys>
+                    <column name="A_0_0">ap_none, 16</column>
+                    <column name="A_0_1">ap_none, 16</column>
+                    <column name="A_0_2">ap_none, 16</column>
+                    <column name="A_0_3">ap_none, 16</column>
+                    <column name="A_1_0">ap_none, 16</column>
+                    <column name="A_1_1">ap_none, 16</column>
+                    <column name="A_1_2">ap_none, 16</column>
+                    <column name="A_1_3">ap_none, 16</column>
+                    <column name="A_2_0">ap_none, 16</column>
+                    <column name="A_2_1">ap_none, 16</column>
+                    <column name="A_2_2">ap_none, 16</column>
+                    <column name="A_2_3">ap_none, 16</column>
+                    <column name="A_3_0">ap_none, 16</column>
+                    <column name="A_3_1">ap_none, 16</column>
+                    <column name="A_3_2">ap_none, 16</column>
+                    <column name="A_3_3">ap_none, 16</column>
+                    <column name="B_0_0">ap_none, 16</column>
+                    <column name="B_0_1">ap_none, 16</column>
+                    <column name="B_0_2">ap_none, 16</column>
+                    <column name="B_0_3">ap_none, 16</column>
+                    <column name="B_1_0">ap_none, 16</column>
+                    <column name="B_1_1">ap_none, 16</column>
+                    <column name="B_1_2">ap_none, 16</column>
+                    <column name="B_1_3">ap_none, 16</column>
+                    <column name="B_2_0">ap_none, 16</column>
+                    <column name="B_2_1">ap_none, 16</column>
+                    <column name="B_2_2">ap_none, 16</column>
+                    <column name="B_2_3">ap_none, 16</column>
+                    <column name="B_3_0">ap_none, 16</column>
+                    <column name="B_3_1">ap_none, 16</column>
+                    <column name="B_3_2">ap_none, 16</column>
+                    <column name="B_3_3">ap_none, 16</column>
+                    <column name="C_0_0">ap_none, 16</column>
+                    <column name="C_0_1">ap_none, 16</column>
+                    <column name="C_0_2">ap_none, 16</column>
+                    <column name="C_0_3">ap_none, 16</column>
+                    <column name="C_1_0">ap_none, 16</column>
+                    <column name="C_1_1">ap_none, 16</column>
+                    <column name="C_1_2">ap_none, 16</column>
+                    <column name="C_1_3">ap_none, 16</column>
+                    <column name="C_2_0">ap_none, 16</column>
+                    <column name="C_2_1">ap_none, 16</column>
+                    <column name="C_2_2">ap_none, 16</column>
+                    <column name="C_2_3">ap_none, 16</column>
+                    <column name="C_3_0">ap_none, 16</column>
+                    <column name="C_3_1">ap_none, 16</column>
+                    <column name="C_3_2">ap_none, 16</column>
+                    <column name="C_3_3">ap_none, 16</column>
+                </table>
+            </item>
+            <item name="TOP LEVEL CONTROL">
+                <table isCollapsed="0">
+                    <keys size="3">Interface, Type, Ports</keys>
+                    <column name="ap_clk">clock, ap_clk</column>
+                    <column name="ap_rst">reset, ap_rst</column>
+                    <column name="ap_ctrl">ap_ctrl_hs, ap_done ap_idle ap_ready ap_start</column>
+                </table>
+            </item>
+        </section>
+    </ReportHWInterface>
+    <ReportSWInterface>
+        <section name="SW I/O Information" level="0">
+            <item name="Top Function Arguments">
+                <table isCollapsed="1">
+                    <keys size="3">Argument, Direction, Datatype</keys>
+                    <column name="A">in, ap_fixed&lt;16 8 AP_TRN AP_WRAP 0&gt;*</column>
+                    <column name="B">in, ap_fixed&lt;16 8 AP_TRN AP_WRAP 0&gt;*</column>
+                    <column name="C">out, ap_fixed&lt;16 8 AP_TRN AP_WRAP 0&gt;*</column>
+                </table>
+            </item>
+            <item name="SW-to-HW Mapping">
+                <table isCollapsed="1">
+                    <keys size="3">Argument, HW Name, HW Type</keys>
+                    <column name="A">A_0_0, port</column>
+                    <column name="A">A_0_1, port</column>
+                    <column name="A">A_0_2, port</column>
+                    <column name="A">A_0_3, port</column>
+                    <column name="A">A_1_0, port</column>
+                    <column name="A">A_1_1, port</column>
+                    <column name="A">A_1_2, port</column>
+                    <column name="A">A_1_3, port</column>
+                    <column name="A">A_2_0, port</column>
+                    <column name="A">A_2_1, port</column>
+                    <column name="A">A_2_2, port</column>
+                    <column name="A">A_2_3, port</column>
+                    <column name="A">A_3_0, port</column>
+                    <column name="A">A_3_1, port</column>
+                    <column name="A">A_3_2, port</column>
+                    <column name="A">A_3_3, port</column>
+                    <column name="B">B_0_0, port</column>
+                    <column name="B">B_0_1, port</column>
+                    <column name="B">B_0_2, port</column>
+                    <column name="B">B_0_3, port</column>
+                    <column name="B">B_1_0, port</column>
+                    <column name="B">B_1_1, port</column>
+                    <column name="B">B_1_2, port</column>
+                    <column name="B">B_1_3, port</column>
+                    <column name="B">B_2_0, port</column>
+                    <column name="B">B_2_1, port</column>
+                    <column name="B">B_2_2, port</column>
+                    <column name="B">B_2_3, port</column>
+                    <column name="B">B_3_0, port</column>
+                    <column name="B">B_3_1, port</column>
+                    <column name="B">B_3_2, port</column>
+                    <column name="B">B_3_3, port</column>
+                    <column name="C">C_0_0, port</column>
+                    <column name="C">C_0_0_ap_vld, port</column>
+                    <column name="C">C_0_1, port</column>
+                    <column name="C">C_0_1_ap_vld, port</column>
+                    <column name="C">C_0_2, port</column>
+                    <column name="C">C_0_2_ap_vld, port</column>
+                    <column name="C">C_0_3, port</column>
+                    <column name="C">C_0_3_ap_vld, port</column>
+                    <column name="C">C_1_0, port</column>
+                    <column name="C">C_1_0_ap_vld, port</column>
+                    <column name="C">C_1_1, port</column>
+                    <column name="C">C_1_1_ap_vld, port</column>
+                    <column name="C">C_1_2, port</column>
+                    <column name="C">C_1_2_ap_vld, port</column>
+                    <column name="C">C_1_3, port</column>
+                    <column name="C">C_1_3_ap_vld, port</column>
+                    <column name="C">C_2_0, port</column>
+                    <column name="C">C_2_0_ap_vld, port</column>
+                    <column name="C">C_2_1, port</column>
+                    <column name="C">C_2_1_ap_vld, port</column>
+                    <column name="C">C_2_2, port</column>
+                    <column name="C">C_2_2_ap_vld, port</column>
+                    <column name="C">C_2_3, port</column>
+                    <column name="C">C_2_3_ap_vld, port</column>
+                    <column name="C">C_3_0, port</column>
+                    <column name="C">C_3_0_ap_vld, port</column>
+                    <column name="C">C_3_1, port</column>
+                    <column name="C">C_3_1_ap_vld, port</column>
+                    <column name="C">C_3_2, port</column>
+                    <column name="C">C_3_2_ap_vld, port</column>
+                    <column name="C">C_3_3, port</column>
+                    <column name="C">C_3_3_ap_vld, port</column>
+                </table>
+            </item>
+        </section>
+    </ReportSWInterface>
+    <ReportBurst>
+        <section name="M_AXI Burst Information" level="0"/>
+    </ReportBurst>
+</profile>
+
